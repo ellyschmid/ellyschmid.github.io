@@ -1,5 +1,5 @@
 ---
-title: "Mexico_Subsidence"
+title: "Mexico Subsidence"
 author: "Elly Schmid"
 date: "2023-03-03"
 output: html_document
@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Background and main aim
 
-Starting in 1840, Mexico City is subsiding ever since. On the on hand the subsidence is associated with natural compaction (i.e., overlaying geological layers). But beyond the natural extraction, the main reason of the deformation is heavy water pumping. Past studies found that Mexico City is subsiding up to 40cm a year. Considerable correlated structural damage has been reported in the area. This structural damages are often linked to great risk, and can lead to accidents like the metro collapse in 2021. Therefore, the main aim of the study is to estimate the subsidence rate for Mexico City in 2022 and estimate the risk weighted on the rate and population density. For that, InSAR data from two Sentinel-1 images were processed using the ESA platform SNAP 9. Further, census data was used from the Instituto Nacional de Estadística y Geografía (INEGI). The estimation of the risk classes was done in QGIS 3.28.3. 
+Starting in 1840, Mexico City is subsiding ever since. On the on hand the subsidence is associated with natural compaction (i.e., overlaying geological layers). But beyond the natural extraction, the main reason of the deformation is heavy water pumping.[1] Past studies found that Mexico City is subsiding up to 40cm a year.[2] Considerable correlated structural damage has been reported in the area. This structural damages are often linked to great risk, and can lead to accidents like the metro collapse in 2021.[3] Therefore, the main aim of the study is to estimate the subsidence rate for Mexico City in 2022 and estimate the risk weighted on the rate and population density. For that, InSAR data from two Sentinel-1 images were processed using the ESA platform SNAP 9. Further, census data was used from the Instituto Nacional de Estadística y Geografía (INEGI). The estimation of the risk classes was done in QGIS 3.28.3. 
 
 # Workflows
 
@@ -35,4 +35,12 @@ Starting in 1840, Mexico City is subsiding ever since. On the on hand the subsid
 
 ![](D:/mexico_maps/Maps/Risk.jpg "sub")
 
+Refereces:
+
+1: Suárez G, Jaramillo SH, López-Quiroz P, Sánchez-Zamora O (2018) Estimation of ground subsidence in the city of Morelia, Mexico using satellite interferometry (INSAR), S. Geofis Int 57(1):39–58
+
+2: López-Quiroz P, Doin M, Tupin F, Briole P, Nicolas J (2009) Time series analysis of Mexico City subsidence constrained by radar interferometry. J Appl Geophys 69(1):1–15
+
+3: Kornei K (2017): Sinking of Mexico City linked to metro accident, with more to come.
+Online: https://www.science.org/content/article/sinking-mexico-city-linked-metro-accident-more-come
 
