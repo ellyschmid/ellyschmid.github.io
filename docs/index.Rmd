@@ -1,0 +1,38 @@
+---
+title: "Mexico_Subsidence"
+author: "Elly Schmid"
+date: "2023-03-03"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Background and main aim
+
+Starting in 1840, Mexico City is subsiding ever since. On the on hand the subsidence is associated with natural compaction (i.e., overlaying geological layers). But beyond the natural extraction, the main reason of the deformation is heavy water pumping. Past studies found that Mexico City is subsiding up to 40cm a year. Considerable correlated structural damage has been reported in the area. This structural damages are often linked to great risk, and can lead to accidents like the metro collapse in 2021. Therefore, the main aim of the study is to estimate the subsidence rate for Mexico City in 2022 and estimate the risk weighted on the rate and population density. For that, InSAR data from two Sentinel-1 images were processed using the ESA platform SNAP 9. Further, census data was used from the Instituto Nacional de Estadística y Geografía (INEGI). The estimation of the risk classes was done in QGIS 3.28.3. 
+
+# Workflows
+
+![Sentinel-1 Subsidence estimation in SNAP](C:/Users/ellys/Desktop/SNAP.png "Sentinel-1 Subsidence estimation in SNAP")
+
+![Calculation of Population Density using INEGI census data](C:/Users/ellys/Desktop/Rplot.png "Calculation of Population Density using INEGI census data")
+
+![Estimation of risk classes using natural braks (jenks](C:/Users/ellys/Desktop/Rplot01.png "Estimation of risk classes using natural braks (jenks)")
+
+
+# Results
+## Subsidence Mexico City:
+
+![](D:/mexico_maps/subsidence_map3.jpg "sub")
+
+## Population Density and Total Population:
+
+![](D:/mexico_maps/Maps/Population_2.jpg "sub")
+
+## Risk Classes: 
+
+![](D:/mexico_maps/Maps/Risk.jpg "sub")
+
+
