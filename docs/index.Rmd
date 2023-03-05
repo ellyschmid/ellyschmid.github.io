@@ -19,7 +19,7 @@ Starting in 1840, Mexico City is subsiding ever since. On the on hand the subsid
 
 ![Calculation of Population Density using INEGI census data](C:/Users/ellys/Desktop/Rplot.png "Calculation of Population Density using INEGI census data")
 
-![Estimation of risk classes using natural braks (jenks](C:/Users/ellys/Desktop/Rplot01.png "Estimation of risk classes using natural braks (jenks)")
+![Estimation of risk classes using natural braks (jenks)](C:/Users/ellys/Desktop/Rplot01.png "Estimation of risk classes using natural braks (jenks)")
 
 
 # Results
