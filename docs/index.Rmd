@@ -26,16 +26,21 @@ Starting in 1840, Mexico City is subsiding ever since. On the on hand the subsid
 ## Subsidence Mexico City:
 
 ![](D:/mexico_maps/subsidence_map3.jpg "sub")
+Figure 1: Subsidence Mexico measured between January and May 2022 using SNAP version 9. The results show the total vertical surface movement between the period ranging from -7,6 cm to 2 cm, with a sptial gradient of the strongest 
+subsiding parts in the city center.<br/><br/><br/>
 
 ## Population Density and Total Population:
 
 ![](D:/mexico_maps/Maps/Population_2.jpg "sub")
+Figure 2: On the top, total Population data of Mexico City from the Instituto Nacional de Estadística y Geografía (INEGI). On the Bottom, estimated Population density using the natural breaks algorithm (jenks).<br/><br/><br/>
 
 ## Risk Classes: 
 
-![](D:/mexico_maps/Maps/Risk.jpg "sub")
+![](D:/mexico_maps/Risk1.jpg "sub")
+Figure 3: Subsidence Risk Map of Mexico City based on the calculated InSAR subsidence measurement and the population density with a weighting of 65% to 35%.<br/><br/><br/> 
 
-Refereces:
+
+References:
 
 1: Suárez G, Jaramillo SH, López-Quiroz P, Sánchez-Zamora O (2018) Estimation of ground subsidence in the city of Morelia, Mexico using satellite interferometry (INSAR), S. Geofis Int 57(1):39–58
 
