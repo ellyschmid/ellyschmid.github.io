@@ -15,11 +15,13 @@ Since 1840, Mexico City has been sinking further and further. On the one hand, t
 
 # Workflows
 
-![Sentinel-1 Subsidence estimation in SNAP.](C:/Users/ellys/Desktop/SNAP.png "Sentinel-1 Subsidence estimation in SNAP"){width=200%}
+![](C:/Users/ellys/Desktop/SNAP.png "Sentinel-1 Subsidence estimation in SNAP")
 
-![Calculation of Population Density using INEGI census data](C:/Users/ellys/Desktop/Rplot.png "Calculation of Population Density using INEGI census data")
 
-![Estimation of risk classes using natural breaks(jenks)](C:/Users/ellys/Desktop/Rplot01.png "Estimation of risk classes using natural breaks (jenks)")
+![](C:/Users/ellys/Desktop/Rplot02.png)
+
+
+![](C:/Users/ellys/Desktop/Rplot.png "Estimation of risk classes using natural breaks (jenks)")
 
 
 # Results
@@ -42,7 +44,7 @@ Figure 2: On the top, total Population data of Mexico City from the Instituto Na
 ![](D:/Eagle/mexico_maps/Risk1.jpg "sub")
 Figure 3: Subsidence risk map of Mexico City based on the calculated InSAR subsidence measurement and the population density with a weighting of 65% to 35%.<br/><br/><br/> 
 
-To better assess the distribution of urban regions where most people are affected by these processes, a risk map was calculated by multiplying the rate of ground subsidence by population density with a weighting of 65% to 35%. The risk map was divided into five categories using the natural break algorithm (Jenks 2007). The result shows areas at high risk based on subsidence velocity and population density, located mainly in the eastern and southern parts of the city. 
+To better assess the distribution of urban regions where most people are affected by these processes, a risk map was calculated by dividing the rate of ground subsidence by population density with a weighting of 65% to 35%. The risk map was divided into five categories using the natural break algorithm (Jenks 2007). The result shows areas at high risk based on subsidence velocity and population density, located mainly in the eastern and southern parts of the city. 
 
 # Discussion 
 
