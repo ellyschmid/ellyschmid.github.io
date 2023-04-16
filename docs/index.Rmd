@@ -1,7 +1,7 @@
 ---
-title: "Mexico Subsidence"
+title: "Mexico Subsidence Risk assessment"
 author: "Elly Schmid"
-date: "2023-03-03"
+date: "2023-16-04"
 output: html_document
 ---
 
@@ -11,41 +11,60 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Background and main aim
 
-Starting in 1840, Mexico City is subsiding ever since. On the on hand the subsidence is associated with natural compaction (i.e., overlaying geological layers). But beyond the natural extraction, the main reason of the deformation is heavy water pumping.[1] Past studies found that Mexico City is subsiding up to 40cm a year.[2] Considerable correlated structural damage has been reported in the area. This structural damages are often linked to great risk, and can lead to accidents like the metro collapse in 2021.[3] Therefore, the main aim of the study is to estimate the subsidence rate for Mexico City in 2022 and estimate the risk weighted on the rate and population density. For that, InSAR data from two Sentinel-1 images were processed using the ESA platform SNAP 9. Further, census data was used from the Instituto Nacional de Estadística y Geografía (INEGI). The estimation of the risk classes was done in QGIS 3.28.3. 
+Since 1840, Mexico City has been sinking further and further. On the one hand, the subsidence is due to natural compaction (i.e., the overlaying of geological strata). However, in addition to natural extraction, the main cause of deformation is water pumping.[1] Previous studies found that Mexico City is subsiding by up to 40 cm per year.[2] Intensive subsurface extraction is causing piezometric reduction and an increase in effective stresses in the subsurface, resulting in compaction and ground subsidence of extraordinary magnitude.[3] Considerable structural damage has been observed in the area. This structural damage is often associated with major risks and can lead to accidents such as the metro collapse in 2021.[4] Soil subsidence risk maps are a valuable decision-making tool to help local governments develop better risk management, land use, and mitigation strategies for cities with severe soil subsidence. Therefore, the main objective of the study is to estimate the subsidence rate for Mexico City in 2022 and to estimate the risk as a function of subsidence rate and population density. For this purpose, InSAR ground subsidence data from two Sentinel-1 images were processed using the ESA SNAP 9 platform. Census data from the Instituto Nacional de Estadística y Geografía (INEGI)[5] were also used. The estimation of risk classes was performed with QGIS 3.28.3. 
 
 # Workflows
 
-![Sentinel-1 Subsidence estimation in SNAP](C:/Users/ellys/Desktop/SNAP.png "Sentinel-1 Subsidence estimation in SNAP")
+![Sentinel-1 Subsidence estimation in SNAP.](C:/Users/ellys/Desktop/SNAP.png "Sentinel-1 Subsidence estimation in SNAP"){width=200%}
 
 ![Calculation of Population Density using INEGI census data](C:/Users/ellys/Desktop/Rplot.png "Calculation of Population Density using INEGI census data")
 
-![Estimation of risk classes using natural braks (jenks)](C:/Users/ellys/Desktop/Rplot01.png "Estimation of risk classes using natural braks (jenks)")
+![Estimation of risk classes using natural breaks(jenks)](C:/Users/ellys/Desktop/Rplot01.png "Estimation of risk classes using natural breaks (jenks)")
 
 
 # Results
+
+In the eastern part of Mexico City, rapid land subsidence is occurring due to the over-exploitation of groundwater resources and the resulting compaction of clayey lacustrine sediments [6] According to the subsidence map derived from the Sentinel-1 data, the areas with higher rates of land subsidence are also located in the eastern part and in some parts south of the city, with subsidence values of up to almost 6 cm within 5 months. (Figure 1) These areas have the highest values of land subsidence, likely caused by the combination of lacustrine deposition with high groundwater withdrawal rates.
+
 ## Subsidence Mexico City:
 
-![](D:/mexico_maps/subsidence_map3.jpg "sub")
+![](D:/Eagle/mexico_maps/subsidence_map3.jpg "sub")
 Figure 1: Subsidence Mexico measured between January and May 2022 using SNAP version 9. The results show the total vertical surface movement between the period ranging from -7,6 cm to 2 cm, with a sptial gradient of the strongest 
-subsiding parts in the city center.<br/><br/><br/>
+subsiding parts in the eastern parts of the city.<br/><br/><br/>
 
 ## Population Density and Total Population:
 
-![](D:/mexico_maps/Maps/Population_2.jpg "sub")
+![](D:/Eagle/mexico_maps/Maps/Population_2.jpg "sub")
 Figure 2: On the top, total Population data of Mexico City from the Instituto Nacional de Estadística y Geografía (INEGI). On the Bottom, estimated Population density using the natural breaks algorithm (jenks).<br/><br/><br/>
 
 ## Risk Classes: 
 
-![](D:/mexico_maps/Risk1.jpg "sub")
-Figure 3: Subsidence Risk Map of Mexico City based on the calculated InSAR subsidence measurement and the population density with a weighting of 65% to 35%.<br/><br/><br/> 
+![](D:/Eagle/mexico_maps/Risk1.jpg "sub")
+Figure 3: Subsidence risk map of Mexico City based on the calculated InSAR subsidence measurement and the population density with a weighting of 65% to 35%.<br/><br/><br/> 
+
+To better assess the distribution of urban regions where most people are affected by these processes, a risk map was calculated by multiplying the rate of ground subsidence by population density with a weighting of 65% to 35%. The risk map was divided into five categories using the natural break algorithm (Jenks 2007). The result shows areas at high risk based on subsidence velocity and population density, located mainly in the eastern and southern parts of the city. 
+
+# Discussion 
+
+Risk assessment based on subsidence measurements and population density has shown that a significant portion of Mexico City's population is at risk of damage to their homes from ground subsidence. Therefore, this method is suitable for a rapid assessment of the risk associated with ground subsidence. To extend this study, it would be necessary to include more SAR data and time steps for ground subsidence estimation to minimize the effects of temporal decorrelation and influences (e.g., weather) on the SAR signal. Also, the risk map estimate could be enhanced by including the horizontal subsidence gradient, which depends on slope. This feature has been shown in previous studies to be a valuable tool to better assess structural vulnerability and estimate areas of greater structural damage[7]. In addition, lower income residents bear relatively higher economic costs due to land subsidence and associated shallow faulting. Therefore, risk assessment could be broadened by considering sozioeconomic factors. 
+
+# References:
+
+1. Suárez G, Jaramillo SH, López-Quiroz P, Sánchez-Zamora O (2018) Estimation of ground subsidence in the city of Morelia, Mexico using satellite interferometry (INSAR), S. Geofis Int 57(1):39–58
+
+2. López-Quiroz P, Doin M, Tupin F, Briole P, Nicolas J (2009) Time series analysis of Mexico City subsidence constrained by radar interferometry. J Appl Geophys 69(1):1–15
+
+3. Cabral-Cano, E., Dixon, T. H., Miralles-Wilhelm, F., Saìnchez- Zamora, O., Díaz-Molina, O., and Carande, R. E.: Space Geodetic Imaging of Rapid Ground Subsidence in México City, B. Am. Geol. Soc., 120, 1556–1566, https://doi.org/10.1130/B26001.1, 2008.
+
+4. Kornei K (2017): Sinking of Mexico City linked to metro accident, with more to come, https://www.science.org/content/article/sinking-mexico-city-linked-metro-accident-more-come
+
+5. https://en.www.inegi.org.mx/
+
+6. Osmanoğlu, B., Dixon, T. H., Wdowinski, S., Cabral-Cano, E., and Jiang, Y.: Mexico City Subsidence Observed with Persistent Scatterer InSAR, Int. J. Appl. Earth Obs., 13, 1–12, https://doi.org/10.1016/j.jag.2010.05.009, 2011.
+
+7. Poreh, D., Pirasteh, S. & Cabral-Cano, E. Assessing subsidence of Mexico City from InSAR and LandSat ETM+ with CGPS and SVM. Geoenviron Disasters 8, 7 (2021). https://doi.org/10.1186/s40677-021-00179-x
 
 
-References:
 
-1: Suárez G, Jaramillo SH, López-Quiroz P, Sánchez-Zamora O (2018) Estimation of ground subsidence in the city of Morelia, Mexico using satellite interferometry (INSAR), S. Geofis Int 57(1):39–58
 
-2: López-Quiroz P, Doin M, Tupin F, Briole P, Nicolas J (2009) Time series analysis of Mexico City subsidence constrained by radar interferometry. J Appl Geophys 69(1):1–15
-
-3: Kornei K (2017): Sinking of Mexico City linked to metro accident, with more to come.
-Online: https://www.science.org/content/article/sinking-mexico-city-linked-metro-accident-more-come
 
