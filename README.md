@@ -1,1 +1,1 @@
-# ellyschmid.github.io
+# Digital Image Analysis Assignment
